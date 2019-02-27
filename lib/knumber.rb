@@ -3,7 +3,12 @@ module KNumber
   class Parser
 
     TABLE = {
+      "o" =>  0,
+      "ウ".force_encoding("UTF-8") => 0,
+      "オ".force_encoding("UTF-8") => 0,
       "レ".force_encoding("UTF-8") => 0,
+      "マ".force_encoding("UTF-8") => 0,
+      "アイ".force_encoding("UTF-8") => 1,
       "イ".force_encoding("UTF-8") => 1,
       "ニ".force_encoding("UTF-8") => 2,
       "ツ".force_encoding("UTF-8") => 2,
@@ -12,11 +17,13 @@ module KNumber
       "ヨ".force_encoding("UTF-8") => 4,
       "ゴ".force_encoding("UTF-8") => 5,
       "ロ".force_encoding("UTF-8") => 6,
+      "ル".force_encoding("UTF-8") => 6,
       "ナ".force_encoding("UTF-8") => 7,
       "ハ".force_encoding("UTF-8") => 8,
       "ヤ".force_encoding("UTF-8") => 8,
       "ク".force_encoding("UTF-8") => 9,
       "キュ".force_encoding("UTF-8") => 9,
+      /#{"テイ".force_encoding("UTF-8")}?/ => 10,
     }
     def initialize katakana
       @katakana = katakana
