@@ -50,10 +50,10 @@ Back when pagers (ポケベル) were popular in Japan, high-school girls sent me
 
 Word     | Input        | Output
 -------- | ------------ | ------
-おはよう | オハヨウ     | 0840
-愛してる | アイシテイル | 14106
-何してる | ナニシテイル | 724106
-さよなら | サヨナラ     | 3470
+おはよう   | オハヨウ      | 0840
+愛している | アイシテイル   | 14106
+何している | ナニシテイル   | 724106
+さよなら   | サヨナラ      | 3470
 
 Figure out how to extend your program to handle these transliterations as well.
 
