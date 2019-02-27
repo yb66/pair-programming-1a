@@ -38,11 +38,11 @@ module KNumber
           mem << 0
         end
       end            
-      mem.join.to_i
+      mem.join
     end
 
 
-    def to_i
+    def to_snum
       @number
     end
   end
