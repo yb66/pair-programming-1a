@@ -53,5 +53,33 @@ describe "Returning a number" do
     include_examples "Checking knumbers"
   end
 
+  context "JK girls texting" do
+
+    context "オハヨウ" do
+      Given(:katakana){ "オハヨウ" }
+      Given(:expected) { "0840" }
+      include_examples "Checking knumbers"
+    end
+
+    context "アイシテイル" do
+      Given(:katakana){ "アイシテイル"}
+      Given(:expected) { "14106" }
+      include_examples "Checking knumbers"
+    end
+
+    context "ナニシテイル" do
+      Given(:katakana){ "ナニシテイル"}
+      Given(:expected) { "724106" }
+      include_examples "Checking knumbers"
+    end
+
+    context "サヨナラ" do
+      Given(:katakana){ "サヨナラ"}
+      Given(:expected) { "3470" }
+      include_examples "Checking knumbers"
+    end
+
+  end
+
 end
 end
